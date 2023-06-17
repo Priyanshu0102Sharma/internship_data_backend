@@ -28,7 +28,7 @@ exports.userpost = async (req, res) => {
             });
             await userData.save();
             console.log(userData);
-            // res.status(200).json(userData);
+            res.status(200).json(userData);
         }
     } catch (error) {
         res.status(401).json(error);
