@@ -27,6 +27,7 @@ exports.userpost = async (req, res) => {
                 fname, lname, email, mobile, gender, location, status, profile: file, datecreated
             });
             await userData.save();
+            console.log(userData);
             // res.status(200).json(userData);
         }
     } catch (error) {
