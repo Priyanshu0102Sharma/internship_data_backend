@@ -7,7 +7,7 @@ const BASE_URL = process.env.BASE_URL
 // register user
 exports.userpost = async (req, res) => {
     const file = req.file.filename;
-    console.log(req.body);
+    console.log(file);
     const { fname, lname, email, mobile, gender, location, status } = req.body;
 
     if (!fname || !lname || !email || !mobile || !gender || !location || !status || !file) {
