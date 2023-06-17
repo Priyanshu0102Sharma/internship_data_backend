@@ -22,7 +22,7 @@ exports.userpost = async (req, res) => {
         } else {
 
             const datecreated = moment(new Date()).format("YYYY-MM-DD hh:mm:ss");
-
+            console.log(datecreated);
             const userData = new users({
                 fname, lname, email, mobile, gender, location, status, profile: file, datecreated
             });
