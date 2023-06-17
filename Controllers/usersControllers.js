@@ -27,7 +27,7 @@ exports.userpost = async (req, res) => {
                 fname, lname, email, mobile, gender, location, status, profile: file, datecreated
             });
             await userData.save();
-            res.status(200).json(userData);
+            // res.status(200).json(userData);
         }
     } catch (error) {
         res.status(401).json(error);
